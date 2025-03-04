@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>超声波声速测量</title>
+</head>
+<link rel="stylesheet" href="temp/physical.css">
+
+<body>
+  <div class="head_line">
+    <h1 class="highlight title">超声波声速测量计算工具</h1>
+    <p class="highlight althor">Design by GROUP 01</p>
+  </div>
+  <div class="input">
+    <div class="input_1">
+      <h3>输入10个波腹位置(由小到大)</h3>
+      <div id="inputContainer"></div>
+    </div>
+    <div class="input_2">
+      <span class="input_F">
+        <h3 class="input_F_in">输入共振频率(kHz)</h3> <br>
+        <input type="number" id="inputF" placeholder="共振频率">
+      </span>
+      <span class="input_temperature">
+        <h3 class="input_temperature_in">输入当前温度(°C)</h3> <br>
+        <input type="number" id="inputTemperature" placeholder="温度">
+      </span>
+    </div>
+  </div>
+
+  <br><br><hr><br>
+
+  <div class="buttonBackground">
+    <div id="input_warning" class="flash"></div>
+    <div id="input_success" class="flash"></div>
+    <div class="select_float">
+      <span>结果保留小数</span>
+      <input type="number" id="decimalPlaces" placeholder="小数位数" value="3">
+      <span>位</span>
+    </div>
+  </div>
+  <button class="calculateButton" id="calculateButton">点我<del id="calculateButton_del"><span>窃取</span></del>计算你的实验成果</button>
+  
+  <div class="result">
+    <div>
+      <p id="result_count"></p>
+    </div>
+    <div>
+      <p id="result_bochang">
+        <p class="data highlight" id="result_bochang_data"></p>
+        <p class="data highlight warning" id="result_bochang_data_warning"></p>
+      </p>
+    </div>
+    <div>
+      <p id="result_bosu">
+        <p class="data highlight" id="result_bosu_data"></p>
+        <p class="data highlight warning" id="result_bosu_data_warning"></p>
+      </p>
+    </div>
+    <div>
+      <p id="result_lilunshengsu"><p class="data highlight" id="result_lilunshengsu_data"></p></p>
+    </div>
+    <div>
+      <p id="result_xiangduiwucha">
+        <p class="data highlight" id="result_xiangduiwucha_data"></p>
+        <p class="data highlight warning" id="result_xiangduiwucha_data_warning"></p>
+        <p class="data highlight accurate" id="result_xiangduiwucha_data_accurate"></p>
+        <p class="data highlight perfect" id="result_xiangduiwucha_data_perfect"></p>
+      </p>
+    </div>
+    <div class="conclusion">
+      <p class="highlight" id="conclusion"></p>
+    </div>
+  </div>
+  <div id="shine_shadow"></div>
+
+  <!-- 
+  基本操作及计算 √
+  空数据警告 √
+  成功提示 √
+  异常警告 √
+  多表单存储 × TOO DIFFICULT!
+  刷新警告 √
+  点缀-整体排版 √
+  点缀-动效设计 √
+  点缀-代码整洁度 √
+  -->
+
+  <script src="temp/physical.js"></script>
+</body>
+</html>
