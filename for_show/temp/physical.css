@@ -1,0 +1,296 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 23, 43);
+}
+h1 {
+  padding: 0 250px;
+  margin: 60px 0 20px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 25px rgba(0, 189, 189, 0.512);
+}
+p, h3 {
+  color: white;
+}
+.head_line {
+  text-align: center;
+}
+.highlight {
+  color:rgb(0, 245, 224);
+  text-shadow: 0 0 25px rgba(0, 189, 189, 0.512);
+}
+
+.title {
+  margin-bottom: 2px;
+}
+.althor {
+  margin-top: 0;
+}
+.input {
+  padding: 0 250px;
+}
+.input_1 {
+  padding: 20px 0;
+}
+.input_2 {
+  padding: 20px 0;
+  overflow: hidden;
+}
+.input_F {
+  float: left;
+}
+.input_temperature {
+  margin: 0 0 0 15px;
+  float: left;
+}
+.input_F_in {
+  display: inline;
+}
+.input_temperature_in {
+  display: inline;
+}
+
+#input_warning {
+  padding: 0 250px;
+  margin: 21px 0 0px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color:rgb(255, 79, 79);
+  text-shadow: 0 0 25px rgba(255, 89, 89, 0.8);
+  opacity: 0;
+}
+#input_success {
+  padding: 0 250px;
+  margin: 21px 0 0px;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  color:rgb(79, 255, 105);
+  text-shadow: 0 0 25px rgba(79, 255, 105, 0.6);
+  opacity: 0;
+}
+
+.flash {
+  animation-name: flash, fade-out;
+  animation-duration: 0.35s, 0.2s;
+  animation-fill-mode: both, forwards;
+  animation-delay: 0s, 2s;
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 注释行未知错误 */
+/* @keyframes flash_1 {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out_1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.flash_1 {
+  animation-name: flash_1, fade-out_1;
+  animation-duration: 0.35s, 0.2s;
+  animation-fill-mode: both, forwards;
+  animation-delay: 0s, 2s;
+} */
+.buttonBackground .select_float {
+  margin: 25px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+}
+.select_float span   {
+  margin: 0;
+  padding: 0;
+}
+.select_float input   {
+  border: none;
+  font-weight: 700;
+  width: 28px;
+  font-size: 18px;
+}
+.buttonBackground {
+  height: 70px;
+  width: 100%;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.328);
+  backdrop-filter: blur(8px) brightness(90%);
+  position: fixed;
+  bottom: 0px;
+}
+.calculateButton {
+  height: 70px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color:rgb(0, 108, 102);
+  background-color:rgb(0, 245, 224);
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  transition: none;
+  transition: background-color 0.1s ease, border-color 0.1s ease, box-shadow 0.2s ease; /* 添加过渡效果 */
+}
+#calculateButton_del {
+  color:rgb(0, 108, 102, 0.6);
+  text-decoration: line-through; 
+  text-decoration-color: rgb(0, 108, 102);
+  text-decoration-thickness: 3.5px;
+}
+.calculateButton:hover {
+  color:rgb(0, 113, 108);
+  background-color:rgb(63, 255, 239);
+  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.512);
+}
+.calculateButton:active{
+  color:rgb(0, 86, 82);
+  background-color:rgb(0, 201, 184);
+  box-shadow: 0 0 20px 3px rgba(0, 164, 164, 0.512);
+}
+.result {
+  height: auto;
+  padding: 20px 250px 100px;
+}
+.result p {
+  display: inline;
+}
+.result div {
+  height: 50px;
+  margin: 20px 0;
+}
+.result .data {
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(0, 189, 189, 0.512);
+}
+.result .conclusion {
+  height: auto;
+  margin-top: 40px;
+}
+.result #conclusion {
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(0, 189, 189, 0.512);
+}
+.result .warning {
+  color:rgb(255, 79, 79);
+  text-shadow: 0 0 25px rgba(255, 89, 89, 0.8);
+}
+.result .accurate {
+  color:rgb(79, 255, 105);
+  text-shadow: 0 0 25px rgba(79, 255, 105, 0.6);
+}
+/* .result #result_xiangduiwucha_data_perfect {
+  color: rgb(255, 227, 67);
+  text-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+} */
+.result .perfect {
+  color: transparent;
+  text-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(90deg, rgba(255, 215, 0) 10%, rgba(255, 125, 0) 30%, rgba(255, 215, 0) 50%);
+  background-position: 0;
+  background-clip: text;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.shining {
+  width: 100%;
+  height: 50px;
+  top: 795px;
+  position: absolute;
+  background-color: rgb(255, 215, 0);
+  box-shadow: 0 0 810px 40px rgb(255, 200, 0);
+  opacity: 0;
+  z-index: -1;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    background-color: rgb(255, 245, 200);
+    box-shadow: 0 0 2000px 180px rgb(255, 245, 100);
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 0.15s ease-in-out forwards;
+}
+
+@keyframes hold {
+  0% {
+    background-color: rgb(255, 245, 200);
+    box-shadow: 0 0 2000px 180px rgb(255, 245, 100);
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    background-color: rgb(255, 215, 0);
+    box-shadow: 0 0 810px 40px rgb(255, 200, 0);
+    opacity: 1;
+  }
+}
+.hold {
+  animation: hold 3s ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 2.5s ease-in-out forwards;
+}
